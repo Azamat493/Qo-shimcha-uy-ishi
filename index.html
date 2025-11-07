@@ -250,7 +250,7 @@
             — разумно распорядиться тем, что дала нам природа......
           </p>
 
-          <div id="details-hidden-text" class="more-info-button">
+          <div id="details-hidden-text" class="more-info-button title-spectacle">
             Спектакль "Скотный двор" ставит перед актерами очень интересную и
             непростую задачу - сыграть животных, со своей индивидуальностью и
             характером, и при этом донести до зрителя важный посыл. Мы
@@ -492,7 +492,7 @@
             Создатели
           </button>
           <div class="ed-accordion-panel" id="interesting-panel">
-            <div class="ulu flex gap-10 justify-center overflow-x-auto">
+            <div class="ulu flex gap-10 sm:justify-center justify-start overflow-x-auto">
               <div
                 class="text-end whitespace-nowrap font-light text-2xl leading-[200%] text-white"
               >
@@ -1439,7 +1439,7 @@
         const img1Path = "../img/spectacles-images/Frame 427.png";
         const img2Path = "../img/spectacles-images/Frame 429.png";
 
-        // Создаем слайды и точки
+
         for (let i = 0; i < SLIDES; i++) {
           const slide = document.createElement("div");
           slide.className = "slide13";
@@ -1472,7 +1472,7 @@
 
         function update() {
           track.style.transform = `translate3d(-${current * 100}%,0,0)`;
-          track.style.transition = "transform 0.5s ease"; // плавный переход
+          track.style.transition = "transform 0.5s ease"; 
           dots.forEach((dot, i) => {
             dot.style.opacity = i === current ? "1" : "0.4";
             dot.style.transform = i === current ? "scale(1.2)" : "scale(1)";
@@ -1494,13 +1494,12 @@
           update();
         });
 
-        // Авто-переход каждые 3 сек
+
         let autoSlide = setInterval(() => {
           current = (current + 1) % SLIDES;
           update();
         }, 3000);
-
-        // Останавливаем авто-листание при наведении
+ии
         sliderContainer.addEventListener("mouseenter", () =>
           clearInterval(autoSlide)
         );

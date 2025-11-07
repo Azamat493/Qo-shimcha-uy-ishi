@@ -990,6 +990,7 @@ background: linear-gradient(180deg, rgba(12, 95, 114, 0.45) 0%, rgba(0, 206, 255
     font-size: 30px;
   }
 
+  .more-info-button,
   .description,
   .quote,
   .personal-reflection {
@@ -1042,7 +1043,7 @@ background: linear-gradient(180deg, rgba(12, 95, 114, 0.45) 0%, rgba(0, 206, 255
   .title-spectacle {
     font-size: 26px;
   }
-
+  .more-info-button,
   .description,
   .quote,
   .personal-reflection {
@@ -1099,7 +1100,7 @@ background: linear-gradient(180deg, rgba(12, 95, 114, 0.45) 0%, rgba(0, 206, 255
   .title-spectacle {
     font-size: 22px;
   }
-
+  .more-info-button,
   .description,
   .quote,
   .personal-reflection {
